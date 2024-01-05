@@ -10,8 +10,8 @@
 					<div class="flex">
 						<div class="email card">
 							<img loading="lazy" src="public/images/content/ft-email.png" alt="">
-							<div class="text-left">
-								<div class="label">Email</div>
+							<div class="con">
+								<div class="label">EMAIL</div>
 								<a href="mailto:<?php $this->info("email"); ?>">
 									<?php $this->info("email"); ?>
 								</a>
@@ -20,8 +20,8 @@
 
 						<div class="phone card">
 							<img loading="lazy" src="public/images/content/ft-phone.png" alt="">
-							<div class="text-left">
-								<div class="label">Phone</div>
+							<div class="con">
+								<div class="label">PHONE</div>
 								<a href="tel:<?php $this->info("phone"); ?>">
 									<?php $this->info("phone"); ?>
 								</a>
@@ -30,22 +30,21 @@
 
 						<div class="location card">
 							<img loading="lazy" src="public/images/content/ft-address.png" alt="">
-							<div class="text-left">
-								<div class="label">Location</div>
+							<div class="con">
+								<div class="label">LOCATION</div>
 								<a>
 									<?php $this->info("address"); ?>
 								</a>
 							</div>
 						</div>
 					</div>
-
-					<div class="socials">
-						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img src="fb.png" alt=""></a>
-						<a href="<?php $this->info('tt_link') ?>" target="_blank"><img src="tt.png" alt=""></a>
-						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img src="ig.png" alt=""></a>
-						<a href="<?php $this->info('yp_link') ?>" target="_blank"><img src="yp.png" alt=""></a>
-						<a href="<?php $this->info('li_link') ?>" target="_blank"><img src="li.png" alt=""></a>
-					</div>
+				</div>
+				<div class="socials">
+					<a href="<?php $this->info('fb_link') ?>" target="_blank"><img src="public/images/content/fb.png" alt=""></a>
+					<a href="<?php $this->info('tt_link') ?>" target="_blank"><img src="public/images/content/tt.png" alt=""></a>
+					<a href="<?php $this->info('ig_link') ?>" target="_blank"><img src="public/images/content/ig.png" alt=""></a>
+					<a href="<?php $this->info('yp_link') ?>" target="_blank"><img src="public/images/content/yp.png" alt=""></a>
+					<a href="<?php $this->info('li_link') ?>" target="_blank"><img src="public/images/content/li.png" alt=""></a>
 				</div>
 			</div>
 
@@ -123,7 +122,6 @@
 	// HEADER FIXED
 	document.addEventListener("DOMContentLoaded", function () {
 		var header = document.getElementById("header");
-		var logoImg = document.querySelector("#header .logo-holder img");
 
 		function updateHeader() {
 			if (window.scrollY > 0) {
@@ -132,24 +130,12 @@
 				header.classList.remove("fixed");
 			}
 
-			// Resize logo image based on scroll position
-			var maxImgWidth = 250;
-			var scrolledPercentage = Math.min(1, window.scrollY / 100); // You can adjust the factor based on your design
-			var newImgWidth = maxImgWidth + (1 - scrolledPercentage) * (logoImg.width - maxImgWidth);
-			logoImg.style.maxWidth = newImgWidth + "px";
 		}
 
-		// Initial call to set header and image size
 		updateHeader();
 
 		window.addEventListener("scroll", function () {
 			updateHeader();
-
-			// Check if scroll position is at the top
-			if (window.scrollY === 0) {
-				// Reset the image size when back at the top
-				logoImg.style.maxWidth = "489px"; // Adjust the original max-width value
-			}
 		});
 	});
 
@@ -221,9 +207,6 @@
 	</script>
 <?php endif; ?>
 
-
-<a class="cta" href="tel:<?php $this->info("phone"); ?>"><span
-		style="display: block; width: 1px; height: 1px; overflow: hidden;">Call To Action Button</span></a>
 
 <?php $this->checkSuspensionFooter(); ?>
 </body>

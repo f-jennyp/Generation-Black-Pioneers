@@ -131,7 +131,7 @@ p {
   position: relative;
   overflow: hidden;
   z-index: 999;
-  display: block;
+  /* display: block; */
   margin: 0 auto;
   text-align: center;
   padding: 27px 0;
@@ -143,20 +143,53 @@ p {
   color: #000;
   line-height: 1.2;
   letter-spacing: 2px;
-  -webkit-appearance: inherit;
-  transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-.btn:hover {
-  transition: all .3s ease-in-out;
+.btn::before {
+  /* transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   color: #DCB352;
+  background: #000; */
+
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #DCB352;
   background: #000;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  color: white;
+}
+.btn:hover:before, .btn:focus:before, .btn:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 /*FLEX*/
@@ -167,11 +200,11 @@ p {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
+  /* -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 
@@ -234,7 +267,7 @@ img {
 #header.fixed {
   position: fixed;
   background-color: rgb(0 0 0 / 90%);
-  /* min-height: 188px; */
+  min-height: 78px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -289,6 +322,10 @@ nav ul li a {
 #header nav ul li a:hover {
   font-weight: 700;
   color: #fff;
+  transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
 
 #header nav ul li.active-menu a {
@@ -302,6 +339,8 @@ nav ul li a {
   /* min-height: 115px; */
   display: block;
 }
+
+
 
 
 /*-----------------------------------------------BANNER-----------------------------------------------*/
@@ -361,6 +400,18 @@ nav ul li a {
 #mission .left img {
   max-width: 598px;
   box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.30);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+#mission .left img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #mission .right {
@@ -403,24 +454,33 @@ nav ul li a {
   color: #fff;
 }
 
+#objectives .row {
+  width: 100%;
+  max-width: 1434px;
+}
+
 #objectives h1 {
   width: 100%;
   max-width: 737px;
   margin: 0 auto 50px;
 }
 
-
 #objectives .objectives-con {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 65px;
-  grid-row-gap: 65px;
+  text-align: center;
+}
+
+
+#objectives .flex {
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
 #objectives .card {
+  display: inline-block;
   border: 2px solid #fff;
-  padding: 35px 58px;
+  padding: 35px 0;
+  width: 100%;
+  max-width: 431px;
 }
 
 #objectives .card img {
@@ -518,7 +578,8 @@ nav ul li a {
 #events .events-con {
   width: 100%;
   max-width: 1434px;
-  margin: 60px
+  margin: 60px auto;
+  gap: 12px;
 }
 
 #events img {
@@ -531,6 +592,11 @@ nav ul li a {
   font-weight: 600;
   letter-spacing: 2px;
   margin: 25px 0;
+}
+
+#events .btn {
+  width: 216px;
+  padding: 13px 0;
 }
 
 /*gallery*/
@@ -643,9 +709,16 @@ form .alert-danger {
 
 /*-----------------------------------------------FOOTER-----------------------------------------------*/
 #footer {
-  background: url('../images/common/footer.jpg')no-repeat top;
+  background: url('../images/content/bg-footer.jpg')no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-height: 1033px;
+}
+
+#footer .row {
+  margin-top: 65px;
 }
 
 #footer .logo-holder {}
@@ -654,13 +727,60 @@ form .alert-danger {
   max-width: 431px;
 }
 
+#footer .comp-info {
+  width: 100%;
+  max-width: 1198px;
+  margin: 112px auto 50px;
+}
+
+#footer .comp-info .card {
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 334px;
+  padding: 30px 0 20px;
+}
+
+#footer .card img {
+  max-width: 78px;
+  margin-top: -66px;
+}
+
+#footer .comp-info .label,
+#footer .comp-info a {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 11px 0;
+}
+
+#footer .comp-info a {
+  font-size: 16px;
+}
+
+#footer .comp-info .phone a {
+  font-size: 24px;
+}
+
+#footer .comp-info .location .con {
+  width: 100%;
+  max-width: 241px;
+  margin: auto;
+}
+
+#footer .socials img {
+  width: auto;
+  min-height: 22px;
+}
+
+
 #footer .nav-holder {
   width: 100%;
 }
 
 #footer nav {
   width: 100%;
-  max-width: 806px;
+  max-width: 1264px;
   margin: 50px auto 0;
 }
 
@@ -675,6 +795,18 @@ form .alert-danger {
   vertical-align: middle;
   text-align: left;
   box-sizing: border-box;
+  text-align: center;
+}
+
+#footer nav ul li a {
+  font-weight: 400;
+  color: #000;
+  font-weight: 500;
+}
+
+#footer nav ul li a:hover,
+#footer nav ul li.active-menu {
+  font-weight: 700;
 }
 
 /* DROPUP */
@@ -736,12 +868,11 @@ form .alert-danger {
 }
 
 #footer .copyrights {
-  background: #3D3330;
-  padding: 20px 0
+  padding: 50px 0 30px;
 }
 
 #footer .copyrights p {
-  color: #fff;
+  color: #000;
 }
 
 .techno img {
@@ -874,7 +1005,7 @@ form .alert-danger {
 
 /*768*/
 @media screen and (max-width: 959px) {
-
+  /* 
   #header .row {
     width: 100%;
     padding: 0;
@@ -945,7 +1076,7 @@ form .alert-danger {
     width: 60px;
     z-index: 999;
   }
-
+ */
 
 }
 

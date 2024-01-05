@@ -8,7 +8,9 @@
 
 			<div class="right text-left">
 				<div class="foreword">MISSION STATEMENT</div>
-				<h1><?php $this->info("company_name"); ?><span class="text-bold-red"> Educational Initiative</span></h1>
+				<h1>
+					<?php $this->info("company_name"); ?><span class="text-bold-red"> Educational Initiative</span>
+				</h1>
 				<p>The Black Pioneers Educational Initiative is dedicated to celebrating and promoting the rich history
 					and contributions of Black leaders within local communities. Our mission is to create and
 					disseminate educational content that highlights the stories of these trailblazers, fostering a
@@ -26,49 +28,56 @@
 
 	<div id="objectives">
 		<div class="row">
-			<h1><?php $this->info("company_name"); ?><span class="text-bold-green"> Objectives</span></h1>
+			<h1>
+				<?php $this->info("company_name"); ?><span class="text-bold-green"> Objectives</span>
+			</h1>
 
 			<div class="objectives-con">
-				<div class="card">
-					<div class="img-holder">
-						<img loading="lazy" src="public/images/content/object-img1.png" alt="">
+
+				<div class="flex">
+					<div class="card">
+						<div class="img-holder">
+							<img loading="lazy" src="public/images/content/object-img1.png" alt="">
+						</div>
+						<div class="label">EDUCATIONAL CONTENT <br> CREATION</div>
 					</div>
-					<div class="label">EDUCATIONAL CONTENT <br> CREATION</div>
+
+					<div class="card">
+						<div class="img-holder">
+							<img loading="lazy" src="public/images/content/object-img2.png" alt="">
+						</div>
+						<div class="label">COMMUNITY <br> ENGAGEMENT</div>
+					</div>
+
+					<div class="card">
+						<div class="img-holder">
+							<img loading="lazy" src="public/images/content/object-img3.png" alt="">
+						</div>
+						<div class="label">DIGITAL <br> ACCESSIBILITY</div>
+					</div>
 				</div>
 
-				<div class="card">
-					<div class="img-holder">
-						<img loading="lazy" src="public/images/content/object-img2.png" alt="">
+				<div class="flex">
+					<div class="card">
+						<div class="img-holder">
+							<img loading="lazy" src="public/images/content/object-img4.png" alt="">
+						</div>
+						<div class="label">INCLUSIVITY AND <br> DIVERSITY</div>
 					</div>
-					<div class="label">COMMUNITY <br> ENGAGEMENT</div>
-				</div>
 
-				<div class="card">
-					<div class="img-holder">
-						<img loading="lazy" src="public/images/content/object-img3.png" alt="">
+					<div class="card">
+						<div class="img-holder">
+							<img loading="lazy" src="public/images/content/object-img5.png" alt="">
+						</div>
+						<div class="label">EMPOWERMENT AND <br> INSPIRATION</div>
 					</div>
-					<div class="label">DIGITAL <br> ACCESSIBILITY</div>
-				</div>
 
-				<div class="card">
-					<div class="img-holder">
-						<img loading="lazy" src="public/images/content/object-img4.png" alt="">
+					<div class="card">
+						<div class="img-holder">
+							<img loading="lazy" src="public/images/content/object-img6.png" alt="">
+						</div>
+						<div class="label">RESEARCH AND <br> DOCUMENTATION</div>
 					</div>
-					<div class="label">INCLUSIVITY AND <br> DIVERSITY</div>
-				</div>
-
-				<div class="card">
-					<div class="img-holder">
-						<img loading="lazy" src="public/images/content/object-img5.png" alt="">
-					</div>
-					<div class="label">EMPOWERMENT AND <br> INSPIRATION</div>
-				</div>
-
-				<div class="card">
-					<div class="img-holder">
-						<img loading="lazy" src="public/images/content/object-img6.png" alt="">
-					</div>
-					<div class="label">RESEARCH AND <br> DOCUMENTATION</div>
 				</div>
 			</div>
 
