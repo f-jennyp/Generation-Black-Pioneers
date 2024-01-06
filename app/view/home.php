@@ -28,11 +28,11 @@
 
 	<div id="objectives">
 		<div class="row">
-			<h1>
+			<h1 class="reveal fade-bottom">
 				<?php $this->info("company_name"); ?><span class="text-bold-green"> Objectives</span>
 			</h1>
 
-			<div class="objectives-con">
+			<div class="objectives-con reveal fade-bottom">
 
 				<div class="flex">
 					<div class="card">
@@ -92,7 +92,7 @@
 
 	<div id="measurement">
 		<div class="row flex measurement-con">
-			<div class="left text-left">
+			<div class="left text-left reveal fade-left">
 				<div class="foreword">GENERATIONAL BLACK PIONEERS</div>
 				<h1>Impact<span class="text-bold-red"> Measurement</span></h1>
 				<p>Regularly assess the reach and effectiveness of our educational initiatives through metrics such as

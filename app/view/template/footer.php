@@ -1,7 +1,7 @@
 <footer>
 	<div id="footer">
 		<div class="row">
-			<div class="footer-con">
+			<div class="footer-con reveal fade-bottom">
 				<div class="logo-holder">
 					<a href="home"><img loading="lazy" src="public/images/content/ft-logo.png" alt="Logo"></a>
 				</div>
@@ -12,7 +12,7 @@
 							<img loading="lazy" src="public/images/content/ft-email.png" alt="">
 							<div class="con">
 								<div class="label">EMAIL</div>
-								<a href="mailto:<?php $this->info("email"); ?>">
+								<a class="hvr-grow" href="mailto:<?php $this->info("email"); ?>">
 									<?php $this->info("email"); ?>
 								</a>
 							</div>
@@ -22,7 +22,7 @@
 							<img loading="lazy" src="public/images/content/ft-phone.png" alt="">
 							<div class="con">
 								<div class="label">PHONE</div>
-								<a href="tel:<?php $this->info("phone"); ?>">
+								<a class="hvr-grow" href="tel:<?php $this->info("phone"); ?>">
 									<?php $this->info("phone"); ?>
 								</a>
 							</div>
@@ -91,12 +91,10 @@
 	</div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="<?php echo URL; ?>public/scripts/sendform.js" data-view="<?php echo $view; ?>" id="sendform"></script>
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
 <script src="<?php echo URL; ?>public/scripts/responsive-menu.js"></script>
 <script src="https://unpkg.com/sweetalert2@7.20.10/dist/sweetalert2.all.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
 <script>
@@ -184,27 +182,6 @@
 
 	</script>
 
-<?php endif; ?>
-
-
-<?php if ($view == "gallery"): ?>
-	<script type="text/javascript" src="public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-	<script type="text/javascript" src="public/scripts/jquery.pajinate.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#gall1').pajinate({
-				num_page_links_to_display: 3,
-				items_per_page: 10
-			});
-			$('.fancy').fancybox({
-				helpers: {
-					title: {
-						type: 'over'
-					}
-				}
-			});
-		})
-	</script>
 <?php endif; ?>
 
 
