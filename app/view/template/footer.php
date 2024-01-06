@@ -40,11 +40,11 @@
 					</div>
 				</div>
 				<div class="socials">
-					<a href="<?php $this->info('fb_link') ?>" target="_blank"><img src="public/images/content/fb.png" alt=""></a>
-					<a href="<?php $this->info('tt_link') ?>" target="_blank"><img src="public/images/content/tt.png" alt=""></a>
-					<a href="<?php $this->info('ig_link') ?>" target="_blank"><img src="public/images/content/ig.png" alt=""></a>
-					<a href="<?php $this->info('yp_link') ?>" target="_blank"><img src="public/images/content/yp.png" alt=""></a>
-					<a href="<?php $this->info('li_link') ?>" target="_blank"><img src="public/images/content/li.png" alt=""></a>
+					<a href="<?php $this->info('fb_link') ?>" target="_blank"><img src="public/images/content/fb.png" alt="facebook"></a>
+					<a href="<?php $this->info('tt_link') ?>" target="_blank"><img src="public/images/content/tt.png" alt="twitter"></a>
+					<a href="<?php $this->info('ig_link') ?>" target="_blank"><img src="public/images/content/ig.png" alt="instagram"></a>
+					<a href="<?php $this->info('yp_link') ?>" target="_blank"><img src="public/images/content/yp.png" alt="yelp"></a>
+					<a href="<?php $this->info('li_link') ?>" target="_blank"><img src="public/images/content/li.png" alt="linkedin"></a>
 				</div>
 			</div>
 
@@ -90,6 +90,7 @@
 		</div>
 	</div>
 </footer>
+
 
 <script src="<?php echo URL; ?>public/scripts/sendform.js" data-view="<?php echo $view; ?>" id="sendform"></script>
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
@@ -145,7 +146,7 @@
 <?php endif ?>
 
 <?php if (in_array($view, ["home", "contact"])): ?>
-	<textarea id="g-recaptcha-response" class="destroy-on-load"></textarea>
+	<!-- <textarea id="g-recaptcha-response" class="destroy-on-load"></textarea> -->
 	<script src='//www.google.com/recaptcha/api.js?onload=captchaCallBack&render=explicit' async defer></script>
 	<script>
 		var captchaCallBack = function () {

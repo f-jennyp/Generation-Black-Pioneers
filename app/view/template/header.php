@@ -3,16 +3,17 @@
 <html lang="en" <?php $this->helpers->htmlClasses(); ?>>
 
 <head>
-	<!-- <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=width" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 	<?php $this->helpers->seo($view); ?>
 	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
 
 	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 	<?php $this->helpers->analytics(); ?>
 
 

@@ -477,6 +477,7 @@ nav ul li a {
 
 #mission .mission-con {
   width: 100%;
+  gap: 20px;
 }
 
 #mission .left img {
@@ -610,7 +611,7 @@ nav ul li a {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  min-height: 1196px;
+  min-height: 1270px;
   display: flex;
   align-items: center;
   margin-top: -200px;
@@ -618,6 +619,8 @@ nav ul li a {
 
 #measurement .measurement-con {
   width: 100%;
+  align-items: center;
+  gap: 20px;
 }
 
 #measurement .left {
@@ -1079,7 +1082,9 @@ form .alert-danger {
 
 /*768*/
 @media screen and (max-width: 959px) {
-
+  #measurement {
+    min-height: 1325px;
+  }
 }
 
 
