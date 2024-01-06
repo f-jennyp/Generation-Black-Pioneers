@@ -4,9 +4,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=width" />
+	<!-- <meta name="viewport" content="width=width" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
 
 	<?php $this->helpers->seo($view); ?>
 	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">

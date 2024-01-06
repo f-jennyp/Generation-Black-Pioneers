@@ -52,20 +52,20 @@
 				<div class="flex">
 					<nav>
 						<ul>
-							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
-							<li <?php $this->helpers->isActiveMenu("mission"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("home"); ?>><a class="nav-link nav-link-fade-up" href="<?php echo URL ?>">HOME</a></li>
+							<li <?php $this->helpers->isActiveMenu("mission"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>mission#content">MISSION OF GBP</a></li>
-							<li <?php $this->helpers->isActiveMenu("events"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("events"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>events#content">EVENTS AND TICKETS</a></li>
-							<li <?php $this->helpers->isActiveMenu("learn"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("learn"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>learn#content">LEARN AND ENGAGE</a></li>
-							<li <?php $this->helpers->isActiveMenu("store"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("store"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>store#content">STORE</a></li>
-							<li <?php $this->helpers->isActiveMenu("join"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("join"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>join#content">JOIN AND GIVE</a></li>
-							<li <?php $this->helpers->isActiveMenu("news"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("news"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>news#content">IN THE NEWS</a></li>
-							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
+							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>contact#content">CONTACT US</a></li>
 						</ul>
 					</nav>

@@ -110,7 +110,7 @@
 				</div>
 			</div>
 
-			<div class="right">
+			<div class="right reveal fade-right">
 				<div class="img-holder1 text-right">
 					<img loading="lazy" src="public/images/content/measure-img1.jpg" alt="">
 				</div>
@@ -128,7 +128,7 @@
 
 			<div class="flex events-con">
 				<div class="box">
-					<div class="img-holder">
+					<div class="img-holder hvr-grow">
 						<img loading="lazy" src="public/images/content/events-img1.jpg" alt="">
 					</div>
 					<div class="label">UPCOMING EVENT #1</div>
@@ -140,7 +140,7 @@
 				</div>
 
 				<div class="box">
-					<div class="img-holder">
+					<div class="img-holder hvr-grow">
 						<img loading="lazy" src="public/images/content/events-img2.jpg" alt="">
 					</div>
 					<div class="label">UPCOMING EVENT #2</div>
@@ -152,7 +152,7 @@
 				</div>
 
 				<div class="box">
-					<div class="img-holder">
+					<div class="img-holder hvr-grow">
 						<img loading="lazy" src="public/images/content/events-img3.jpg" alt="">
 					</div>
 					<div class="label">UPCOMING EVENT #3</div>
