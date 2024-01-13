@@ -85,10 +85,16 @@ nav {
   text-align: right;
 }
 
-h1,
-h2 {
+h1 {
   font-family: 'Times New Roman', sans-serif;
   font-size: 70px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 50px;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -1074,6 +1080,13 @@ form .alert-danger {
 
 .inner #content .row {
   padding: 40px;
+}
+
+.inner #mission .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
 }
 
 /*inner gallery*/
