@@ -19,7 +19,7 @@
 
 				<div class="btn-holder">
 					<div class="btn">
-						<a href="<?php echo URL ?>learn#content">LEARN MORE</a>
+						<a href="<?php echo URL ?>mission#content">LEARN MORE</a>
 					</div>
 				</div>
 			</div>

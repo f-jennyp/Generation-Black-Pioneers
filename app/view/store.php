@@ -1,6 +1,6 @@
 <div id="content">
     <div class="row">
-        <h1>Sorry!</h1>
-        <p>Page not found.</p>
+        <h1>STORE</h1>
+        <p>Information coming soon...</p>
     </div>
 </div>
